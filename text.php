@@ -16,10 +16,13 @@
     <title>PHP Badwords</title>
 </head>
 <body>
-    
+
     <div>
         <h3> Testo </h3>
-        <p><?php echo $text ?></p>
+        <p><?php echo $text; ?></p>
+
+        <h3>Lunghezza</h3>
+        <p>Lunghezza del testo è: <?php echo strlen($text); ?></p>
     </div>
 
 </body>
