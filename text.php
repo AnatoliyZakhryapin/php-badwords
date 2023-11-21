@@ -8,6 +8,10 @@
     ";
 
     $word_to_change=$_POST["replace_word"];
+
+    $text_replaced=str_replace($word_to_change, "****", $text);
+
+    $text_replaced_length= strlen($text_replaced);
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +33,9 @@
         <h3>Il testo con parola sostituita</h3>
         <p><?php echo str_replace($word_to_change, "****", $text); ?></p>
 
+        <h3>Lunghezza del testo con parola sostituita</h3>
+        <p>Lunghezza del testo è: <?php echo $text_replaced_length; ?></p>
+        
     </div>
 
 </body>
