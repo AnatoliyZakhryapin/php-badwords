@@ -6,6 +6,8 @@
     
     Nisi quis eleifend quam adipiscing vitae proin sagittis. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eu ultrices vitae auctor eu. Dis parturient montes nascetur ridiculus mus. Eget mi proin sed libero enim sed faucibus turpis. Sed risus ultricies tristique nulla aliquet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Mus mauris vitae ultricies leo integer malesuada. Enim ut sem viverra aliquet eget sit amet tellus. Vestibulum lorem sed risus ultricies tristique nulla. Hendrerit dolor magna eget est lorem ipsum dolor sit. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Massa vitae tortor condimentum lacinia quis vel eros. Lacus laoreet non curabitur gravida arcu ac tortor. Faucibus vitae aliquet nec ullamcorper sit amet risus. Massa eget egestas purus viverra accumsan in nisl.
     ";
+
+    $word_to_change=$_POST["replace_word"];
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +25,10 @@
 
         <h3>Lunghezza</h3>
         <p>Lunghezza del testo è: <?php echo strlen($text); ?></p>
+
+        <h3>Il testo con parola sostituita</h3>
+        <p><?php echo str_replace($word_to_change, "****", $text); ?></p>
+
     </div>
 
 </body>
